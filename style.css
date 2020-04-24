@@ -1,0 +1,301 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    color: #484848;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-menu {
+    padding: 5px 5%;
+    border-bottom: 1px solid #FA8072;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    background-color: #f5f5f5;
+}
+
+#navbar {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+#navbar li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+#navbar ul {
+    padding: 10px;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: #484848;
+    transition: all 0.5s ease 0s;
+}
+
+#navbar a:hover {
+    color: #FA8072;
+}
+
+#navbar .active a {
+    color: #FA8072;
+}
+
+#navbar h2 {
+    margin-right: auto;
+}
+
+#first-name {
+    color: #FA8072;
+    font-style: oblique;
+}
+
+.welcome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.welcome h1 {
+    font-size: 4em;
+}
+
+.welcome p {
+    font-size: 2em;
+}
+
+#profile-link {
+    font-size: 4em;
+}
+
+#profile-link i {
+    transition: all 0.6s ease 0s;
+}
+
+#profile-link i:hover {
+    color: #FA8072;
+}
+
+#projects h1 {
+    font-size: 50px;
+    font-style: oblique;
+    color: #FA8072;
+    text-align: center;
+    padding-bottom: 1em;
+}
+
+.link {
+    padding: 2em 0;
+    text-align: center;
+}
+
+.link a {
+    text-decoration: none;
+    color: #484848;
+    transition: all 0.6s ease 0s;
+}
+
+.link a:hover {
+    color: #FA8072;
+}
+
+#projects {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+.vid {
+    width: 40%;
+    border-radius: 3px;
+}
+
+.video {
+    transition: all 1s ease 0s;
+}
+
+.video:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #ccc;
+}
+
+.va {
+    width: 100%;
+}
+
+.projects {
+display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   grid-gap: 2em;
+   padding: 5em;
+}
+
+.image img {
+    width: 100%;
+    border-radius: 3px;
+}
+
+.image img:hover {
+    opacity: 0.6;
+}
+
+.image {
+    transition: all 1s ease 0s;
+}
+
+.image:hover {
+    background: #FA8072;
+    width: 100%;
+    height: auto;
+    transform: scale(1.1);
+    border-radius: 3px;
+    box-shadow: 0 0 20px #ccc;
+}
+
+.video iframe {
+    width: 100%;
+    height: 400px;
+}
+
+/* Contact */
+.contact-body {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    padding: 2em;
+    margin-top: 100px;
+}
+
+.email {
+    width: 30%;
+    text-align: left;
+}
+
+.form {
+    width: 60%;
+    text-align: left;
+    margin-left: 6em;
+}
+
+form {
+    padding-top: 2em;
+}
+
+.name-email {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin: 0;
+}
+
+.name-email input {
+    width: 170px;
+}
+
+[for="email"] {
+    padding-left: 1.5em;
+}
+
+.message {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 1em 0;
+}
+
+.message label {
+    padding: 1em 0;
+}
+
+[type="submit"] {
+    background: #FA8072;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 3px;
+}
+
+.button {
+    padding-top: 1.5em;
+}
+
+footer {
+    background-color: #ccc;
+    text-align: center;
+    border-top: 1px solid #FA8072;
+    bottom: 0;
+    padding: 1em;
+}
+
+@media (max-width: 768px) {
+    .vid {
+        display: block;
+        width: 85%;
+    }
+
+    .projects {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 0.5em;
+        padding: 2.5em;
+    }
+
+    #projects h1 {
+        font-size: 35px;
+    }
+
+    .welcome p {
+        font-size: 1.5em;
+    }
+
+    .welcome h1 {
+        font-size: 3.5em;
+    }
+    #profile-link {
+        font-size: 2.5em;
+    }
+
+    .name-email {
+        display: block;
+    }
+
+    .form-example {
+        padding: 1em 0;
+    }
+
+     [for="email"] {
+         padding-left: 0;
+     }
+
+     .form-example {
+         padding: 1em 0;
+     }
+
+     .name-email input {
+         width: 150px;
+     }
+
+     textarea {
+         width: 250px;
+         height: 150px;
+     }
+
+     .contact-body {
+         font-size: 13px;
+     }
+
+
+}
